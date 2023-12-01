@@ -15,6 +15,7 @@ export interface PossibleAiModelsInterface {
   [modelId: string]: AiModel;
 }
 
+//TODO FIXME: This should be configuration or database contents
 export const PossibleAiModels: PossibleAiModelsInterface = {
   //
   // OpenAI

@@ -1,6 +1,8 @@
 import {
   DEBUG_MODE,
   OPENAI_API_TYPE,
+  OPENAI_MODEL_NAME,
+  OPENAI_DEPLOYMENT_ID,
 } from '@/utils/app/const';
 
 import { AiModel, GetAvailableOpenAIModelResponse, PossibleAiModels } from '@/types/ai-models';
@@ -17,7 +19,8 @@ export async function getAvailableOpenAIModels(key: string): Promise<GetAvailabl
 
   const openai = await getOpenAi(key);
 
-  const list = await openai.models.list();
+  const list = (OPENAI_API_TYPE === 'azure') ? {data:[{model:OPENAI_MODEL_NAME, id:OPENAI_DEPLOYMENT_ID}]}:(await openai.models.list());//TODO FIXME
+  // In AZURE case, I think there isn't a "models" API path, so maybe need to implement this https://learn.microsoft.com/en-us/rest/api/cognitiveservices/accountmanagement/deployments/list?view=rest-cognitiveservices-accountmanagement-2023-05-01&tabs=HTTP 
 
   const models: (AiModel | null)[] = list.data
     .map((openaiModel: any) => {

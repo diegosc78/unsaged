@@ -158,3 +158,16 @@ The default seed to use on new conversations using OpenAI models.
 ```sh
 NEXT_PUBLIC_DEFAULT_OPENAI_SEED=42
 ```
+
+
+## Azure OpenAI Service
+
+Added these env variables for configuring the model you published in your azure portal, because it's not working now calling to API for retrieving model list.
+
+```sh
+# OPENAI_MODEL_NAME=gpt-35-turbo
+# OPENAI_DEPLOYMENT_ID=myazureopenaideployment
+```
+
+Deployment ID is needed for Azure API access.
+Model name is for retrieving model additional data from internal configuration (see ai-models.ts)

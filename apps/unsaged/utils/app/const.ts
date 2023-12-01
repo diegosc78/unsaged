@@ -106,6 +106,12 @@ export const OPENAI_API_TYPE =
 export const OPENAI_API_VERSION =
   dockerEnvVarFix(process.env.OPENAI_API_VERSION) || '2023-03-15-preview';
 
+export const OPENAI_MODEL_NAME =
+  dockerEnvVarFix(process.env.OPENAI_MODEL_NAME) || '';
+
+export const OPENAI_DEPLOYMENT_ID =
+  dockerEnvVarFix(process.env.OPENAI_DEPLOYMENT_ID) || '';
+
 export const OPENAI_ORGANIZATION =
   dockerEnvVarFix(process.env.OPENAI_ORGANIZATION) || '';
 
