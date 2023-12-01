@@ -4,6 +4,20 @@
 
 [![Join our Discord](https://discordapp.com/api/guilds/1124558062171209771/widget.png?style=banner2)](https://discord.gg/rMH2acSEzq)
 
+# ABOUT THIS FORK
+
+This is a fork from https://github.com/jorge-menjivar/unsaged .
+It's a "playground" fork for making some improvements and bug fixes. This is not intended to be a replacement for original repo. All changes here will be kindly suggested to original repo to adopt.
+
+My goals now are:
+- Include keycloak as an allowed SSO (using already present nextauth)
+- Fix support for Azure OpenAI Service
+- Fix problems with non-english browser locales (infinite redirection loop). Ensure nice spanish translation also.
+- Publish docker image and create a helm chart for deployment in kubernetes
+
+After this... it will depend on original repo evolution. If they integrate these changes... I'd probably remove this fork.
+
+
 # 🎉 Welcome to unSAGED
 
 unSAGED is a cutting-edge chat kit engineered for seamless interaction with AI models. It allows you to easily have conversations with different AI models from a variety of providers, all in one place. It also allows you to manage multiple users and conversations, and synchronize them across different devices.

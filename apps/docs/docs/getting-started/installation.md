@@ -6,9 +6,11 @@ sidebar_position: 1
 
 ## Clone the Repository
 
+Original one is:
 ```sh
 git clone https://github.com/jorge-menjivar/unSAGED.git
 ```
+Remember this is a fork.
 
 ## Generate Supabase Tables
 
@@ -69,8 +71,10 @@ SUPABASE_SERVICE_ROLE_KEY=supabase_service_role_key
 
 ## Install Dependencies
 
+This project is intended to be built using pnpm. Be sure you have it installed.
+
 ```sh
-npm i
+pnpm install
 ```
 
 ## Run App
@@ -78,7 +82,7 @@ npm i
 ### Run Locally
 
 ```sh
-npm run dev
+pnpm run dev
 ```
 
 ### Run in Docker
