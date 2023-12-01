@@ -1,0 +1,9 @@
+.pnpm-store
+.turbo
+.github
+.devcontainer
+node_modules
+test-results
+apps/unsaged/node_modules
+apps/unsaged/.turbo
+apps/unsaged/.next
